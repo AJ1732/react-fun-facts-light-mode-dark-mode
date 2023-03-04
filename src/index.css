@@ -1,13 +1,120 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@600&display=swap');
+
+* {
+  font-family: 'Inter', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  height: 100vh;
+  display: grid;
+  place-items: center;
 }
+
+/* body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.container {
+  height: 100%;
+  width: 550px;
+  /* border: 1px solid rgba(0, 0, 0, 0.25); */
+  border: 1px solid whitesmoke;
+  border-radius: 3px;
+}
+
+/* NAVBAR */
+nav {
+  height: 90px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  padding: 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #00ABCA;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22.2535px;
+  line-height: 27px;
+  letter-spacing: -0.05em;
+
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggler {
+  color: #2B283A;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 110%;
+  text-align: center;
+
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggler-slider {
+  width: 24.55px;
+  height: 13.09px;
+  background: #2B283A;
+  border-radius: 11.1898px;
+}
+
+/* MAIN CONTENT */
+main {
+  color: #2B283A;
+  padding: 3rem;
+  position: relative;
+}
+
+.main-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 39.06px;
+  line-height: 47px;
+  letter-spacing: -0.05em;
+}
+  
+.main-facts {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  width: 390px;
+  /* height: 190px; */
+  padding-top: 1rem;
+  margin-left: 1.2rem;
+}
+
+.main-facts > li {
+  padding-block: 10px;
+}
+
+.main-facts > li::marker{
+  font-size: 1.4rem;
+  color: #61DAFB;
+}
+
+.logo-bg {
+  position: absolute;
+  top: 90px;
+  right: 0;
+  z-index: -1;
+}
+
